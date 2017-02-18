@@ -1,5 +1,372 @@
 /*File for Basic-Portfolio*/
 
+/*html {
+
+	position: relative;
+    min-height: 100%;
+    /*background: url("../images/paper_3.png");
+    */
+
+
 body {
-	text-decoration: underline;
+	
+	width: 100%;
+	background: url("../images/paper_3.png");
 }
+
+.wrapper {
+	width: 960px;
+	display: block;
+	/*Note to self: This margin setting helps to "center" the 960px wrapper in browser view ->*/
+	margin: auto;
+	font-size: 18px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: url("../images/paper_3.png");
+	min-height: 100%;
+}
+
+#headBox {
+	background: #ffffff;
+	color: #ffffff;
+	height: 5em;
+	margin: 0;
+	border: 1px solid #cccccc;
+	border-bottom-style: 2px solid;
+	border-bottom-color: #cccccc;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: auto;
+	clear: both;
+
+}
+
+#navBar {
+	background: #ffffff;
+	padding: 20px;
+	float: right;
+	text-align: right;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+a  {
+	color: #777777;
+}
+
+#nav:hover { 
+  color: #ffffff;
+  background-color: #4aaaa5;
+  opacity: 0.75;
+}
+
+#nav:focus {  
+	color: #ffffff;
+	background-color: #777777; 
+}
+
+#jmNamebox {
+	width: 300px;
+	height: 4.2em;
+	letter-spacing: 1.2px;
+	background: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	margin-left: 0;
+
+}
+
+
+#container {
+	
+	margin-bottom: 20px;
+	overflow: auto;
+	clear: both;
+
+}
+
+
+#main-bio-box {
+
+	display: inline-block;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	width: 648px;
+	line-height: 150%;
+	margin-left: 0;
+	/*clear: both;*/
+	border: 1px solid #dddddd;
+	background-image: url("assets/images/paper_3.png");
+	position: relative;
+	/*overflow: auto;
+*/
+}
+
+
+#secBox {
+
+	color: #4aaaa5;
+	background: #ffffff;
+	/*margin: 10px auto;*/
+	padding-left: 25px;
+	padding-right: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	position: relative;
+
+}
+
+#jmPic {
+	float: left;
+	margin-left: 20px;
+	margin-right: 10px;
+	width: 160px;
+	height: 160px;
+	clear: both;
+}
+
+#jmPic:hover {
+ background-image: url("assets/images/elijah.jpg");
+ opacity: 1;
+}
+
+p {
+
+	margin-left: 20px;
+	/*line-height: 150%;*/
+}	
+
+#connectBox {
+	float: right;
+	width: 270px;
+	height: auto;
+	letter-spacing: 1.2px;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	/*display: inline-flex;*/
+	/*align-items: center;
+  	justify-content: center;*/
+  	position: relative;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  	color: #4aaaa5;
+  	text-align: center;
+}
+
+
+#logos {
+	display: inline;
+	width: 55px;
+	height: 55px;
+	margin-right: 8px;
+
+}
+
+/*Makes social icon logos transparent on hover prior to clicking--->*/
+img:hover {
+    opacity: 0.5;
+}
+
+hr {
+
+	margin: 20px;
+}
+
+
+h1, h2, h3 { 
+
+	color: #4aaaa5;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: bold;
+
+
+}
+
+
+#footBox {
+	height: 75px;
+	width: 960px;
+	border: 5px;
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	background: #666666;
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+    position: absolute;
+    bottom: 0; 
+
+}
+
+.box-1 {
+
+	display: inline-block;
+	margin: 25px;
+	
+	/*margin: auto; *//*20px;*/
+	/*margin-right: 20px;*/
+	/*width: 200px;
+	height: 150px;
+*/
+}
+
+/*.floating-box {
+	display: inline-block;
+	margin: 50px;
+	margin-right: 20px;
+	width: 200px;
+	height: 150px;
+}*/
+
+
+#hangBox {
+
+	display: inline-block;
+	position: relative;
+	width: 265px;
+	height: 205px;
+	/*margin: 50px;
+	margin-right: 20px;*/
+}
+
+#hangText {
+
+	position: relative;
+	bottom: 50px;
+	width: 200px
+	padding: 30px;
+	color: #ffffff;
+	background: #4aaaa5;
+	text-align: center;
+	
+	/*align-items: center;
+	justify-content: center;*/
+}
+
+
+.box-2 {
+
+	display: inline-block;
+	margin: 25px;
+	/*margin: 20px;
+	margin-right: 20px;	*/
+}
+
+#rpgBox {
+	display: inline-block;
+	position: relative;
+	width: 265px;
+	height: 205px;
+
+}
+
+#rpgText {
+
+	position: relative;
+	bottom: 50px;
+	width: 200px
+	padding: 30px;
+	color: #ffffff;
+	background: #4aaaa5;
+	text-align: center;
+}
+
+.box-3 {
+
+	display: inline-block;
+	margin: 25px;
+	/*margin: 20px;
+	margin-right: 20px;	*/
+}
+
+#triviaBox {
+	display: inline-block;
+	position: relative;
+	width: 265px;
+	height: 205px;
+
+}
+
+#triviaText {
+
+	position: relative;
+	bottom: 50px;
+	width: 200px
+	padding: 30px;
+	color: #ffffff;
+	background: #4aaaa5;
+	text-align: center;
+}
+.box-4 {
+
+	display: inline-block;
+	margin: 25px;
+
+	/*padding: 20px;
+	margin: 30px;
+	margin-right: 20px;	*/
+}
+
+#infoBox {
+	display: inline-block;
+	position: relative;
+	width: 265px;
+	height: 205px;
+
+}
+
+#infoText {
+
+	position: relative;
+	bottom: 50px;
+	width: 200px
+	padding: 30px;
+	color: #ffffff;
+	background: #4aaaa5;
+	text-align: center;
+}
+.box-5 {
+
+	display: inline-block;
+	margin: 25px;
+
+	/*margin: 30px;
+	margin-right: 20px;	*/
+}
+
+#rockBox {
+	display: inline-block;
+	position: relative;
+	width: 265px;
+	height: 205px;
+
+}
+
+#rockText {
+
+	position: relative;
+	bottom: 50px;
+	width: 200px
+	padding: 30px;
+	color: #ffffff;
+	background: #4aaaa5;
+	text-align: center;
+}
+
+#contactBox {
+
+	margin: 30px;
+
+}
+/*margin: 10px;
+    border: 3px solid #73AD21; 
+#
