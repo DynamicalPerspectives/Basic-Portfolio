@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
 	<meta charset="utf-8">
 	<title>Basic Portfolio_JM</title>
@@ -7,25 +8,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body class="wrapper">
+<body>
 
-<!-- <div id="fixed">
-    Jeanmarie Martinko
-    <br> 
-  </div>
- -->
-
-
-			
+<div class="wrapper">		
 
 	<div id="headBox">
 	
-
 			<nav id="navBar">
 
-				<a href="About">About  |</a> |
-				<a href="/Portfolio/">Portfolio  |</a> |
-				<a href="/Contact/">Contact  </a> |
+				<a id="nav" href="index.html">About  |</a> 
+				<a id="nav" href="portfolio.html">Portfolio  |</a>
+				<a id="nav" href="contact.html">Contact  </a> 
 
 			</nav>
 
@@ -36,43 +29,19 @@
 
 	<div id="container">
 
-	<!-- <div id="secBox">
-
-			<section>section</section>
-
-		</div>
-
-			<div id="articleBox">
-
-				<article>article</article>
-
-					<div  id="hBox">
-						<h1 id="heading">h1, </h1>
-						<h2 id="heading">h2, </h2>
-						<h3 id="heading">h3</h3>
-					</div>
-
-					<div id="pBox">
-						<p>p</p>
-					</div>
-
-			</div> -->
-
 		<div id="main-bio-box">
-		
-			<br>
 
-			<section id="aboutHead">About Me
+			<!-- <br> -->
 
-			<br>
+			<h1 id="secBox">About Me</h1>
 
 			<hr>
 
-			</section>
+			<!-- </section> -->
 
-		<!-- </div> -->
+			<!-- Added second image that appears when hovering over pic -->
 
-			<img id="jmPic" src="assets/images/JMandAnnamae.jpg">
+			<img id="jmPic" src="assets/images/JMandAnnamae.jpg" alt="an image of JM with white and gray kitten" onmouseover="this.src='assets/images/elijah.jpg'" alt="an image of JM riding a horse" onmouseout="this.src='assets/images/JMandAnnamae.jpg'" alt="an image of JM with white and gray kitten"/>
 
 			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
 			<br>
@@ -80,7 +49,9 @@
 
 		</div>
 
-		<aside id="connectBox">Connect with Me
+		<aside id="connectBox">
+
+			<h2>Connect with Me</h2>
 
 			<br>
 
@@ -88,10 +59,12 @@
 
 			<br>
 
-			<img id="logo" src="assets/images/github_square_black.png">
-			<img id="logo" src="assets/images/social-linkedin-square2.png">
-			<img id="logo" src="assets/images/stackoverflow.png">
+			<a id="gitH" href="https://github.com/DynamicalPerspectives" target="_blank"><img id="logos" src="assets/images/github_square_black.png"/></a>
 
+			<a id="linkIn" href="https://www.linkedin.com/in/jeanmarie-martinko-3505ba" target="_blank"><img id="logos" src="
+			assets/images/social-linkedin-square2.png"/></a>
+
+			<a id="stackOflow" href="http://stackexchange.com/users/10158258/dynamical" target="_blank"><img id="logos" src="assets/images/stackoverflow.png"/></a>
 
 		</aside>
 
